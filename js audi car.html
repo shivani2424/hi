@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2 style="text-align: center;font-size: xx-large;">My First javascript webpage</h2>
+
+
+
+<h1>Demo to change color of the car using onclick attribute.</h1>
+<img style='height: 350px; width=400px;' id="myImage" src="https://imgd.aeplcdn.com/1200x900/cw/ec/19796/Audi-A6-Right-Front-Three-Quarter-165485.jpg?wm=0&q=85" style="width:100px">
+<br>
+<br><button onclick="document.getElementById('myImage').src='data:image/jpeg;base64,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'">Change color to black</button>
+<br>
+<button onclick="document.getElementById('myImage').src='https://autospruce.com/wp-content/uploads/2020/08/2021-Audi-Q7-Review-Price-Specs-Redesign-Release-Date-Color-Options.jpg' ">Change color to red      </button>
+<br>
+<button  onclick="document.getElementById('myImage').src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2FbfKFWf9_tEwsFN-jDFSBGxqgkHPdGljNQ&usqp=CAU' ">Change color to metallic.</button>
+<br>
+<button  onclick="document.getElementById('myImage').src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTb1-Prvc6JjxyQK_us9p1_2TqYw2z3X9YrZQNeiU2Xffn-_YvhaGdhVdf8KI3Msf_NQAQ&usqp=CAUange color to blue' ">Change color to blue.</button>
+<h1>Demo to use display object property values.</h1>
+<img style='height: 350px; width=400px;'  src="https://imgd.aeplcdn.com/1200x900/cw/ec/19796/Audi-A6-Right-Front-Three-Quarter-165485.jpg?wm=0&q=85" style="width:100px">
+<h2>Car Properties:</h2>
+<p id="model"></p>
+<p id="price"></p>
+<p id="color"></p>
+<p id="fueltype"></p>
+
+
+<script>
+    var car={
+    model:"Audi A6",
+    price:'48.60' ,
+    color:'White',
+    fueltype:'petrol/diesel'
+    
+};
+document.getElementById("model").innerHTML=car.model;
+document.getElementById("price").innerHTML=car.price;
+document.getElementById("color").innerHTML=car.color;
+document.getElementById("fueltype").innerHTML=car.fueltype;
+</script>
+<h1>Models along with specifications.</h1>
+<h2 id="mod" ;></h2>
+<img src="https://imgd.aeplcdn.com/664x374/cw/ec/22801/Audi-Q2-Right-Front-Three-Quarter-70075.jpg?v=201711021421&q=85" alt='image'>
+<p id="pr"></p>
+<p id="seat"></p>
+<p id="transm"></p>
+<h2 id="mod2"></h2>
+<img src="https://imgd.aeplcdn.com/664x374/cw/ec/39472/Audi-New-A6-Exterior-169814.jpg?wm=0&q=85" alt="image">
+<p id="pr2"></p>
+<p id="seat2"></p>
+<p id="transm2"></p>
+<h2 id="mod3"></h2>
+<img src="https://imgd.aeplcdn.com/664x374/n/cw/ec/51378/s5-sportback-exterior-right-front-three-quarter-5.jpeg?q=85" alt="image">
+<p id="pr3"></p>
+<p id="seat3"></p>
+<p id="transm3"></p>
+<script>
+class Cars{
+    constructor(mod,pri,seat,transm){
+    this.mod=mod;
+    this.pri=pri;
+    this.seat=seat;
+    this.transm=transm;
+
+    }
+    
+}
+mycar=new Cars('Audi Q2','price - 35.01 Lakh','5 Seater','Automatic(Dual Clutch)');
+mycar2=new Cars('Audi A6','price - 55.93 Lakh','5 Seater','Automatic(Dual Clutch)');
+mycar3=new Cars('Audi S5 Sportback','price - 79.07 Lakh','5 Seater','Automatic (Torque Converter)');
+document.getElementById("mod").innerHTML = mycar.mod;
+document.getElementById("pr").innerHTML = mycar.pri;
+document.getElementById("seat").innerHTML = mycar.seat;
+document.getElementById("transm").innerHTML = mycar.transm;
+document.getElementById("mod2").innerHTML = mycar2.mod;
+document.getElementById("pr2").innerHTML = mycar2.pri;
+document.getElementById("seat2").innerHTML = mycar2.seat;
+document.getElementById("transm2").innerHTML = mycar2.transm;
+document.getElementById("mod3").innerHTML = mycar3.mod;
+document.getElementById("pr3").innerHTML = mycar3.pri;
+document.getElementById("seat3").innerHTML = mycar3.seat;
+document.getElementById("transm3").innerHTML = mycar3.transm;
+
+    
+    
+
+</script>
+
+
+</body>
+</html>
