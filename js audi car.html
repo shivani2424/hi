@@ -80,18 +80,14 @@ document.getElementById("mod3").innerHTML = mycar3.mod;
 document.getElementById("pr3").innerHTML = mycar3.pri;
 document.getElementById("seat3").innerHTML = mycar3.seat;
 document.getElementById("transm3").innerHTML = mycar3.transm;
-
-    
-    
-
-</script>
-    <h1>Present month(2021)  on-road price discount.</h1>
+    </script>
+<h1>Present month(2021)  on-road price discount.</h1>
 <p id="onroad"></p>
 <script>
     var month;
     var discount;
-    var do=new Date();
-    switch (do.getMonth()) {
+    var today_date = new Date();
+    switch (today_date.getMonth()) {
       case 0:
         month = "January";
         discount="1 lakh";
@@ -141,9 +137,26 @@ document.getElementById("transm3").innerHTML = mycar3.transm;
           discount="1.5 lakh";
          break;
     }
-    document.getElementById("onroad").innerHTML= month+"month of 2021 discount price on vehicle is amount of"+discount;
+    document.getElementById("onroad").innerHTML= month+" month of 2021 discount price on vehicle is amount of "+discount;
 
 </script>
+<h1>Present day sales</h1>
+<p id="sale"></p>
+<script>
+  var sales=0;
+  top_prices=[7500000,6380000,4500000,3669500,5300500];
+var i;
+  for(i=0;i<5;i++){
+    sales=sales+top_prices[i];
+
+  }
+  document.getElementById("sale").innerHTML="Today sales by Ms.Sweety is "+sales+" lakhs";
+</script>
+
+
+    
+    
+
 
 
 </body>
