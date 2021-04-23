@@ -85,6 +85,65 @@ document.getElementById("transm3").innerHTML = mycar3.transm;
     
 
 </script>
+    <h1>Present month(2021)  on-road price discount.</h1>
+<p id="onroad"></p>
+<script>
+    var month;
+    var discount;
+    var do=new Date();
+    switch (do.getMonth()) {
+      case 0:
+        month = "January";
+        discount="1 lakh";
+        break;
+      case 1:
+        month = "february";
+        discount="0.9 lakh";
+        break;
+      case 2:
+        month = "March";
+        discount="1.1 lakh";
+        break;
+      case 3:
+        month = "April";
+        discount="1.5 lakh";
+        break;
+      case 4:
+        month = "May";
+        discount="0.8 lakh";
+        break;
+      case 5:
+        month = "June";
+        discount="0.5 lakh";
+        break;
+      case  6:
+        month = "July";
+        discount="1.9 lakh";
+        break;
+      case 7:
+          month="August";
+          discount="1.9 lakh";
+          break;
+      case 8:
+        month = "September";
+        discount="1.1 lakh";
+        break;
+      case 9:
+        month = "Octomber";
+        discount="1.1 lakh";
+        break;
+      case  10:
+        month = "November";
+        discount="1.2 lakh";
+        break;
+     case 11:
+         month="December";
+          discount="1.5 lakh";
+         break;
+    }
+    document.getElementById("onroad").innerHtml= month+"month of 2021 discount price on vehicle is amount of"+discount;
+
+</script>
 
 
 </body>
